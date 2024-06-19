@@ -50,11 +50,11 @@ body{
 }
 
 .foto__logo__curriculo{
-    width: 75%;
+    width: 50%;
     height: 50%;
     border: 2px solid var(--cor-secundaria);
     border-radius: 20px;
-    margin-bottom: 30%;
+    
 }
 .apresentacao{
     padding: 5% 15%;
