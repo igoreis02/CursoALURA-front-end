@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo:#00030C;
+    --fonte-principal:"Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1{
+    color: var(--branco-principal);
+}
+p{
+    color: var(--cinza-secundario);
+}
+
+.principal{
+    background-image: url("/imagens/Background.png"); 
+    background-repeat: no-repeat; 
+    background-size: cover; /* Tamanho de fundo redimenciona a imagem do findo para cobri todo o container e tambem tem o CONTAIN que redimendicona a imagem do findo para ficar totalmente visivel*/
+    text-align: center;
+    align-items: center;
+}
+.container__caixa{
+    margin: 0 6em;
+    
+}
+.container{
+    height: 100vh;/* pega 100% do viwer port */
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__botao{
+    background-color: var(--botao-azul); 
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block; /*Coloca em forma de bloco um em baixo do outro*/
+    margin: 1em;
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+
+}
+
+.botao__assinar{
+   display: inline-block;
+   margin: 1em;
+}
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em ;
+}
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 3em;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.container__descricao{
+    padding: 2em;   
+}
+
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+
+
+
+.container__terceiro{
+    display: block;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 6rem;
+    
+}
+
+.container__item{
+    display: inline-block;
+    margin: 3em;
+}
+.titulo__final{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.texto{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+}
+.rodape{
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.container__rodape{
+    display: block;
+    margin: 0;
+}
+.rodape__item{
+    display: inline-block;
+    margin: 0.4rem;
+}
+.rodape__link{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+.imagem__logo{
+    text-align: center;
+    margin: 3rem;
+}
+.texto__rodape{
+    margin: 1rem;
+}
