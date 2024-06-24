@@ -30,7 +30,7 @@ p{
 }
 
 .principal{
-    background-image: url("/imagens/Background.png"); 
+    background-image: url("imagens/Background.png"); 
     background-repeat: no-repeat; 
     background-size: cover; /* Tamanho de fundo redimenciona a imagem do findo para cobri todo o container e tambem tem o CONTAIN que redimendicona a imagem do findo para ficar totalmente visivel*/
     text-align: center;
@@ -104,51 +104,58 @@ p{
     color: var(--cinza-secundario);
 }
 
-
-
-.container__terceiro{
-    display: block;
+.dispositivos{
     text-align: center;
-    align-items: center;
+}
+
+.dispositivo__titulo{
+    font-size: 3em;
+    padding: 3%;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista{
+    display: flex;
     list-style: none;
-    margin-bottom: 6rem;
-    
+    justify-content: center;
+    gap: 5%;
+    margin: 0.5em 0 5em 0;
 }
 
-.container__item{
-    display: inline-block;
-    margin: 3em;
-}
-.titulo__final{
-    text-align: center;
-    font-size: 3rem;
-}
-
-.texto{
-    text-align: center;
+.dispositivo__texto{
     font-size: 2em;
     font-weight: 700;
+    color: var(--branco-principal);
 }
+
 .rodape{
     text-align: center;
     margin-bottom: 6rem;
 }
 .container__rodape{
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: 0;
+    list-style: none;
+    gap: 1%;
 }
 .rodape__item{
-    display: inline-block;
     margin: 0.4rem;
+    color: var(--branco-principal);
+}
+
+.imagem__rodape{
+    text-align: center;
+    margin: 3rem;
 }
 .rodape__link{
     text-decoration: none;
     color: var(--branco-principal);
 }
-.imagem__logo{
-    text-align: center;
-    margin: 3rem;
-}
+
 .texto__rodape{
-    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 15%;
+
 }
