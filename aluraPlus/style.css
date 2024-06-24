@@ -7,6 +7,7 @@
     --botao-azul: #167BF7;
     --cor-de-fundo:#00030C;
     --fonte-principal:"Inter", sans-serif;
+    --botao-azul-efeito: #6dafff;
 }
 
 *{
@@ -66,10 +67,17 @@ p{
     margin: 1em;
 }
 
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+}
+
 .botao__secundario{
     background-color: transparent;
     border: 2px solid var(--branco-principal);
+}
 
+.botao__secundario:hover{
+    background-color: var(--botao-azul-efeito);
 }
 
 .botao__assinar{
@@ -151,6 +159,9 @@ p{
 .rodape__link{
     text-decoration: none;
     color: var(--branco-principal);
+}
+.rodape__link:hover{
+    color: var(--botao-azul);
 }
 
 .texto__rodape{
