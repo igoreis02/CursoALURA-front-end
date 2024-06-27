@@ -1,0 +1,62 @@
+.cabecalho__menu__hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url("../imagem/Menu.svg");
+    background-repeat: no-repeat; /*Para nao reptir a imagem do menu*/
+    background-position: center; /*a posicao da imagem centralizada */
+    display: inline-block; /*coloca os elementos do um do lado do outro podendo mecher da maegem*/
+}
+
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+
+}
+
+.container__imagem{
+    padding: 1em;
+}
+
+.lista__menu{
+    display: none; /*Desaparese com o elemento da lista e nao opcupa  espacço */
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+.container__botao{
+    display: none;
+}
+
+.container__botao:checked ~ .lista__menu { /*checked e uma psedudo classe, ele identifica se esta preenchido o check box do imput  ~ é um combinador css */
+    display: block;
+
+}
+
+.lista__menu__titulo, 
+.lista__menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista__menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista__menu__link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+
+    
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>AluraBooks</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" class="container__botao" id="menu">
+            <label for="menu">
+                <span class="cabecalho__menu__hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista__menu">
+                <li class="lista__menu__titulo">Categorias</li>
+                <li class="lista__menu__item">
+                    <a href="#" class="lista__menu__link">Programação</a>
+                </li>
+                <li class="lista__menu__item">
+                    <a href="#" class="lista__menu__link">Front-end</a>
+                </li>
+                <li class="lista__menu__item">
+                    <a href="#" class="lista__menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista__menu__item">
+                    <a href="#" class="lista__menu__link">Business</a>
+                </li>
+                <li class="lista__menu__item">
+                    <a href="#" class="lista__menu__link">Design & UX </a>
+                </li>
+
+            </ul>
+            <img class="container__imagem" src="imagem/Logo.svg" alt="Logo da aluraBooks">
+        </div>
+        <div class="container">
+            <a href="#"><img class="container__imagem" src="imagem/Favoritos.svg" alt="Favoritos"></a>
+            <a href="#"><img class="container__imagem" src="imagem/Sacola.svg" alt="Compras"></a>
+            <a href="#"><img class="container__imagem" src="imagem/Usuário.svg" alt="Usuário"></a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src="imagem/ApacheKafka.svg" alt="Livro"></div>
+                <div class="swiper-slide"><img src="imagem/Arquitetura.svg" alt="livro"></div>
+                <div class="swiper-slide"><img src="imagem/Javascript.svg" alt="livro"></div>
+                <div class="swiper-slide"><img src="imagem/ReactNative.svg" alt="livro"></div>
+                <div class="swiper-slide"><img src="imagem/Nodejs.svg" alt="livro"></div>
+                <div class="swiper-slide"><img src="imagem/Portugol.svg" alt="livro"></div>
+                <div class="swiper-slide"><img src="imagem/Tuning.svg" alt="livro"></div>
+
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!--Primeira linha -->
+            <div class="card__descricao">
+                <!--Primeira coluna-->
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <!--Segunda coluna-->
+                <img src="imagem/angular.svg" alt="logo angular">
+
+            </div>
+            <!--segunda linha -->
+            <div class="card__botoes">
+                <!--primeiro coluna-->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="imagem/Favoritos.svg" alt="Favoritar livros"></li>
+                    <li class="botoes__item"><img src="imagem/Sacola.svg" alt="Adiconar carro de compras "></li>
+                </ul>
+                <!--segunda coluna-->
+                <a class="botoes__link" href="#">Saiba mais</a>
+            </div>
+        
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais Vendidos</h2>
+        <!-- Slider main container -->
+
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src="imagem/ApacheKafka.svg" alt="Livro"></div>
+                <div class="swiper-slide"><img src="imagem/Arquitetura.svg" alt="livro"></div>
+                <div class="swiper-slide"><img src="imagem/Javascript.svg" alt="livro"></div>
+                <div class="swiper-slide"><img src="imagem/ReactNative.svg" alt="livro"></div>
+                <div class="swiper-slide"><img src="imagem/Nodejs.svg" alt="livro"></div>
+                <div class="swiper-slide"><img src="imagem/Portugol.svg" alt="livro"></div>
+                <div class="swiper-slide"><img src="imagem/Tuning.svg" alt="livro"></div>
+
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!--Primeira linha -->
+            <div class="card__descricao">
+                <!--Primeira coluna-->
+                <div class="descricao">
+                    <ul class="descicao__imagem">
+                        <li><img class="descricao__imagem-item" src="imagem/estrela.svg" alt="Estrela"></li>
+                        <li><img class="descricao__imagem-item" src="imagem/estrela.svg" alt="Estrela"></li>
+                        <li><img class="descricao__imagem-item" src="imagem/estrela.svg" alt="Estrela"></li>
+                        <li><img class="descricao__imagem-item" src="imagem/estrela.svg" alt="Estrela"></li>
+                        <li><img class="descricao__imagem-item" src="imagem/estrela.svg" alt="Estrela"></li>
+                    </ul>
+                    <h3 class="descricao__titulo ">Autora do Mês</h3>
+                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                </div>
+                <!--Segunda coluna-->
+                <img src="imagem/foto.svg" alt="logo angular">
+
+            </div>
+            <!--segunda linha -->
+            <div class="card__botoes">
+                <!--primeiro coluna-->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="imagem/Favoritos.svg" alt="Favoritar livros"></li>
+                    <li class="botoes__item"><img src="imagem/Sacola.svg" alt="Adiconar carro de compras "></li>
+                </ul>
+                <!--segunda coluna-->
+                <a class="botoes__link" href="#">Saiba mais</a>
+            </div>
+        
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 3000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
