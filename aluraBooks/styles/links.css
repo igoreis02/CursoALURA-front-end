@@ -1,0 +1,27 @@
+.container__links{
+    background:var(--azul-degrade); ;
+}
+
+.container__links__titulo{
+    color: var(--branco);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+    font-weight: 300;
+}
+
+.container_link{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em 0;
+}
+
+.container__link__item{
+    color: var(--branco);
+    background-color: var(--laranja);
+    text-decoration: none;
+    padding: 1em;
+}
+

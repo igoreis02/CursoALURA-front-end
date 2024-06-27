@@ -1,0 +1,42 @@
+.rodape{
+    background-color: var(--branco);
+    padding: 1.5em;
+}
+.rodape__titulo{
+    color: var(--azul);
+    font-weight: 600;
+}
+
+.rodape__texto{
+    font-weight: 300;
+    padding: 1em 0;
+    color: var(--azul);
+}
+.rodape__pesquisa{
+    background-color: transparent;
+    border: 1px solid var(--azul);
+    color: var(--branco);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+
+.rodape__pesquisa::placeholder{
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400px;
+    color: var(--azul);
+    background: url("../imagem/rodape.svg") no-repeat;
+    background-position: 0.5em;
+    padding-left: 2.5em;
+}
+
+.rodape__titulo__final{
+    border-style: solid;
+    border-top-color: #858585 ;
+    border-top-width: 1px;
+    background-color: #F9F9F9;
+    padding: 1.5em;
+    color: black;
+    font-weight: 400;
+}
