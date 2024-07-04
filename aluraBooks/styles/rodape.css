@@ -3,7 +3,10 @@
     padding: 1.5em;
 }
 .rodape__titulo{
-    color: var(--azul);
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 600;
 }
 
@@ -18,7 +21,7 @@
     color: var(--branco);
     border-radius: 24px;
     padding: 1em;
-    width: 100%;
+    width: 90%;
 }
 
 .rodape__pesquisa::placeholder{
@@ -26,17 +29,95 @@
     font-size: 16px;
     font-weight: 400px;
     color: var(--azul);
-    background: url("../imagem/rodape.svg") no-repeat;
+    background: url("../imagem/email.svg") no-repeat;
     background-position: 0.5em;
     padding-left: 2.5em;
 }
 
 .rodape__titulo__final{
-    border-style: solid;
-    border-top-color: #858585 ;
-    border-top-width: 1px;
-    background-color: #F9F9F9;
-    padding: 1.5em;
+    background-color: var(--branco);
     color: black;
     font-weight: 400;
+}
+.rodape__final{
+    background-color: var(--branco);
+}
+
+.lista_rodape{
+    display: none;
+}
+
+
+@media screen and (min-width:1024px){
+    .rodape{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rodape__descicao{
+        margin: 1em;
+        width: 30%;
+    }
+
+    .rodape__pesquisa{    
+        width: 30%;
+    }
+
+    .rodape__titulo{
+        font-size:1.5em ;
+    }
+
+    .rodape__final{
+        display: flex;
+        justify-content: space-around;
+        padding: 1em;
+    }
+
+    .lista_rodape{
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+    }
+    .lita__rodape-item{
+        display: flex;
+        align-items: center;
+        margin: 0.6em;
+    }
+
+    .lista__rodape-link{
+        text-decoration: none;
+        color: var(--cinza);
+        margin-left: 0.6em;
+        font-size: 14px;
+    }
+    .lista__rodape-titulo{
+        color: var(--cinza-titulo);
+        font-size: 14px;
+        margin: 2em;
+    }
+
+    .rodape__titulo__final{
+        color: black;
+        font-weight: 500;
+        font-size: 24px; 
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .container_link{
+        padding: 3em 25vw;
+    }
+
+    .rodape{
+        padding: 4em 20vw;
+    }
+
+    .lista_rodape{
+        border-left: 1px solid var(--cinza-titulo);
+        padding-left: 1em;
+    }
+    .rodape__final{
+        padding: 2em 0;
+    }
 }
